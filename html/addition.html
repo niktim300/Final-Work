@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark">
+
+<head>
+  <link rel="website icon" type="png" href="../pics/icons8-account-90.png" />
+  <title>SEO сайтів | Доповнення</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+  <!--JQ connection-->
+  <script src="../scripts/jquery-3.6.3.min.js"></script>
+  <!--------------Bootstrap first connection----------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!--CSS connection-->
+  <link rel="stylesheet" href="../styles/mainSTyles.css" />
+</head>
+
+<body>
+  <wrapper class="wrapper">
+    <span class="fix_container" id="start"></span>
+    <!-- Scroll Top -->
+    <div id="scroll_top" class="isShowBtn hide">
+      <svg class="strelka-top-2" viewBox="0 0 9 14">
+        <path class="svg-strelka"
+          d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z">
+        </path>
+      </svg>
+    </div>
+    <!--HEADER-->
+    <header class="header">
+      <noscript>
+        <!-- NoScript -->
+        <div class="alert-of_noscript">
+          You have disabled the java script in your browser, this website
+          doesn't work properly without it, please enable it!
+        </div>
+      </noscript>
+      <div class="container">
+        <div class="header_body">
+          <!-- THEME SWITCHER -->
+          <form action="#" class="block-form">
+            <label for="check1" class="label-check">
+              <img src="../pics/icons8-moon-symbol-90-removebg-preview.png" alt="dark" class="side" id="theme1" />
+            </label>
+            <div class="block-form_input">
+              <div class="checkbox" id="main-checkbox">
+                <input type="checkbox" name="main-checkbox" id="check1" />
+              </div>
+            </div>
+            <label for="check1" class="label-check">
+              <img src="../pics/icons8-sun-90-removebg-preview.png" alt="light" class="side" id="theme2" />
+            </label>
+          </form>
+          <a href="../index.html" class="home_button"><img src="../pics/icons8-home-page-90.png" alt="home"
+              class="home_icon" /></a>
+          <!-- BURGER ICON -->
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <span class="fix_containerx"></span>
+              <li>
+                <a class="header_link" href="interaction.html">
+                  <span>&#8678;</span>Взаємодія з сайтом
+                </a>
+              </li>
+              <li>
+                <a class="header_link" href="#links_out_weight">
+                  Посилальна маса
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Alert-->
+    <div class="alert">
+      <div class="alert_text">
+        Цей курс не є професійною роботою, тут можуть бути помилки різних
+        типів, але основні поняття і пояснення вірні.
+      </div>
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="btn-close">
+        <line x1="0" x2="100" y1="0" y2="100" class="line" />
+        <line x1="0" x2="100" y1="100" y2="0" class="line" />
+      </svg>
+    </div>
+    <!-- navigation_main_menu -->
+    <nav class="navigation_menu_container hide">
+      <ul class="navigation_menu_list">
+        <a href="../html/start.html">
+          <li class="navigation_menu_item">Старт</li>
+        </a>
+        <a href="../html/introduction.html">
+          <li class="navigation_menu_item">Введення</li>
+        </a>
+        <a href="../html/semantic_core.html">
+          <li class="navigation_menu_item">Семантичне ядро</li>
+        </a>
+        <a href="../html/interaction.html">
+          <li class="navigation_menu_item">Взаємодія з сайтом</li>
+        </a>
+        <li class="navigation_menu_item" id="current_theme">Доповнення</li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="main_content">
+        <h3 class="sub_title-of_part _anim_items _anim_no_hide" id="additional">
+          Доповнення
+        </h3>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="http_requests">
+          Мікророзмітка <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Додатковий інструмент для апргрейду вашого сніпету, що може
+          поліпшити шанси на те, що клієнт зацікавиться саме вашим посиланням
+          <div class="info2">Типи міророзмітки:</div>
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">Мікродані;</li>
+            <li class="types-of-sites_item">
+              <span class="explanation">JSON</span> (ліпший варіант);
+            </li>
+            <li class="types-of-sites_item">RDFa.</li>
+          </ul>
+          Що ця мікророзмітка дозволяє виділити в сніпеті:
+          <ul class="list-with_dots2">
+            <li class="item-with_dot">Опис товару;</li>
+            <li class="item-with_dot">Зображення (наприклад логотип);</li>
+            <li class="item-with_dot">Зірковий рейтинг;</li>
+            <li class="item-with_dot">Контакти;</li>
+            <li class="item-with_dot">Хлібні крихти;</li>
+            <li class="item-with_dot">Відгуки;</li>
+            <li class="item-with_dot">Адресу;</li>
+            <li class="item-with_dot">Рецепти;</li>
+            <li class="item-with_dot">Час і дату;</li>
+            <li class="item-with_dot">Наявність товару;</li>
+            <li class="item-with_dot">Фотографію.</li>
+          </ul>
+          Словники мікророзміток:
+          <ul class="list-with_dots2">
+            <li class="item-with_dot">
+              <span class="explanation">Schema.org</span> - самий крутий і
+              перевірений
+            </li>
+            <a href="https://schema.org/" target="_blank">
+              <img src="../pics/schema.png" alt="посилання до Shema.org"
+                class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+            </a>
+            <li class="item-with_dot">
+              <span class="explanation">Open graph</span> - теж непоганий.
+            </li>
+            <a href="https://ogp.me/" target="_blank">
+              <img src="../pics/open_graph.png" alt="посилання до Shema.org"
+                class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+            </a>
+          </ul>
+        </i>
+        <div class="info _anim_items _anim_no_hide">
+          Ось ще додаткові ресурси, для відстежування + прискорення
+          завантаження сайту:
+        </div>
+        <ul class="list-with_dots2">
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            NetSpeak spider
+            <a href="https://netpeaksoftware.com/ru/spider" target="_blank">
+              <img src="../pics/netspeak.png" alt="посилання до netspeak"
+                class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+            </a>
+          </li>
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            SEO Screaming Frog
+            <a href="https://www.screamingfrog.co.uk/seo-spider/" target="_blank">
+              <img src="../pics/frog.png" alt="посилання до screamingfrog"
+                class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+            </a>
+          </li>
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            Також це можна робити у консолі розробника chrome
+            <img src="../pics/chrome_dev_tools.png" alt="google chrome dev tools"
+              class="example_picture-type16-10 _anim_items _anim_no_hide" loading="lazy" />
+          </li>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="links_out_weight">
+          Посилальна маса <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Тут я хочу конкретно зачепити тему зовнішнього нарощування
+          посилальної маси. Це допомагає у ранжуванні сайту, а фактично це
+          просто посилання на ваш сайт на інших ресурсах, але де брати ці самі
+          ресурси, окрім соц мереж звичано, з ними усе зрозуміло, або сам
+          публікуєш посилання, або купляєш рекламу. Тут не дуже все
+          відрізняється, але є декілька цікавих пропозицій як саме можна
+          фінансово та без фінансів інвестувати у зовнішні посилання:
+          <div class="info2">
+            <span class="explanation">Посилання-донор</span> - посилання на
+            іншому ресурсі, яке буде вести саме на ваш сайт.
+          </div>
+          Ось інструкція як підібрати/знайти посилання-донорів:
+        </i>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="types-of-sites_item _anim_items _anim_no_hide">
+            Орієнтуючись на ваш кінцевий бюджет вам треба підібрати
+            оптимальний варіант для отримання посилань-донорів:
+            <ul class="types-of-sites_list _anim_items _anim_no_hide">
+              <li class="alwd_item _anim_items _anim_no_hide">
+                <span class="explanation">-</span>Крауд посилання з форумів та
+                QA сервісів;
+              </li>
+              <li class="alwd_item _anim_items _anim_no_hide">
+                <span class="explanation">-</span>Аутрич/Прямі домовленості з
+                майданчиками;
+              </li>
+              <li class="alwd_item _anim_items _anim_no_hide">
+                <span class="explanation">-</span>Вічні посилання з біржі:
+                <a href="https://www.miralinks.ru/" target="_blank">
+                  <img src="../pics/miralinks.png" alt="посилання до Miralinks"
+                    class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+                </a>
+                <a href="https://prposting.com/ru?gclid=Cj0KCQiAi8KfBhCuARIsADp-A55Hjv9JfDa65uB9_ijFsJkSSbPeggdKYNei92ijZCoCM6ZqjXtzygsaAhhsEALw_wcB&utm_medium=cpc&utm_source=google"
+                  target="_blank">
+                  <img src="../pics/gogetLinks.png" alt="посилання до gogetlinks"
+                    class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="types-of-sites_item _anim_items _anim_no_hide">
+            Підібрати конкретні домени для роботи з уроахуванням показників
+            якості.
+          </li>
+        </ul>
+        <div class="info _anim_items _anim_no_hide">
+          <span class="explanation">Що треба враховувати при пошуку посилань-донорів:</span>
+        </div>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            Регіон та домен донору: чи співпадає він з тим, що вам потрібно.
+            <span class="explanation">Виключення</span>: доменні зони .com
+            .net .org. Ось сайт для перевірки такого типу інформації:
+          </li>
+          <a href="https://www.similarweb.com/ru/" target="_blank">
+            <img src="../pics/similarWeb.png" alt="посилання до similarWeb"
+              class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+          </a>
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            Спамність донора:
+          </li>
+          <a href="https://checktrust.ru/" target="_blank">
+            <img src="../pics/checkTrust.png" alt="посилання до checkTrust"
+              class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+          </a>
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            Також всіляку таку статистику можна дивитися у Serpstat, про нього
+            теж не забуваемо.
+          </li>
+        </ul>
+        <h3 class="sub_title-of_part _anim_items _anim_no_hide" id="start_ta">
+          Перевірка показників якості донорів
+        </h3>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="types-of-sites_item2 _anim_items _anim_no_hide">
+            Видимість та відвідувальність (перевірити можна на SerpStat);
+          </li>
+          <li class="types-of-sites_item2 _anim_items _anim_no_hide">
+            DR/SDR = 0;
+          </li>
+          <li class="types-of-sites_item2 _anim_items _anim_no_hide">
+            перевірка IP донорів (якщо однакові - спам):
+          </li>
+          <a href="https://netpeaksoftware.com/checker" target="_blank">
+            <img src="../pics/netpeak_checker.png" alt="посилання до netspeak  checker"
+              class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+          </a>
+          <li class="types-of-sites_item2 _anim_items _anim_no_hide">
+            Також треба звертати увагу на схожість доменів, бо це може бути
+            показником спамності також.
+          </li>
+        </ul>
+        <i class="definition _anim_items _anim_no_hide"><span class="explanation">Але що рибити з такими
+            донорами?</span>
+          При виявленні наякісний донорів треба занести їх у свій список, щоб
+          більше не витрачати на їх аналіз часу, але якщо вони вже у вас можна
+          відправляти таких на відхилення сюди (бо є ризик отримати санкцію):
+          <a href="https://support.google.com/webmasters/answer/2648487?hl=ru" target="_blank">
+            <img src="../pics/google_disavow.png" alt="посилання до google disavow"
+              class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+          </a></i>
+        <!-- pagination -->
+        <nav class="pagination">
+          <a href="start.html" class="page">1</a>
+          <a href="introduction.html" class="page">2</a>
+          <a href="semantic_core.html" class="page">3</a>
+          <a href="interaction.html" class="page">4</a>
+          <div class="page">5</div>
+        </nav>
+      </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="about">
+        Для інформаційного наповнення сайту використано матеріали відкритого
+        безкоштовного курсу
+        <a href="https://genius.space/ru/" target="_blank"><span class="explanation"> Genius Space</span></a>. Усі
+        співпадіння випадкові.
+      </div>
+      <div class="author-profile">
+        <div class="author_name">Creator: Mykyta Tymoshenko</div>
+        <img src="../pics/zyro-image.png" />
+      </div>
+    </footer>
+  </wrapper>
+  <!--JS connection-->
+  <script src="../scripts/main.js"></script>
+  <!--------------Second Bootstrap Connection----------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

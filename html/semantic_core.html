@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark">
+
+<head>
+  <link rel="website icon" type="png" href="../pics/icons8-account-90.png" />
+  <title>SEO сайтів | Семантичне ядро</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+  <!--JQ connection-->
+  <script src="../scripts/jquery-3.6.3.min.js"></script>
+  <!--------------Bootstrap first connection----------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!--CSS connection-->
+  <link rel="stylesheet" href="../styles/mainSTyles.css" />
+</head>
+
+<body>
+  <wrapper class="wrapper">
+    <span class="fix_container" id="start"></span>
+    <!-- Scroll Top -->
+    <div id="scroll_top" class="isShowBtn hide">
+      <svg class="strelka-top-2" viewBox="0 0 9 14">
+        <path class="svg-strelka"
+          d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z">
+        </path>
+      </svg>
+    </div>
+    <!--HEADER-->
+    <header class="header">
+      <noscript>
+        <!-- NoScript -->
+        <div class="alert-of_noscript">
+          You have disabled the java script in your browser, this website
+          doesn't work properly without it, please enable it!
+        </div>
+      </noscript>
+      <div class="container">
+        <div class="header_body">
+          <!-- THEME SWITCHER -->
+          <form action="#" class="block-form">
+            <label for="check1" class="label-check">
+              <img src="../pics/icons8-moon-symbol-90-removebg-preview.png" alt="dark" class="side" id="theme1" />
+            </label>
+            <div class="block-form_input">
+              <div class="checkbox" id="main-checkbox">
+                <input type="checkbox" name="main-checkbox" id="check1" />
+              </div>
+            </div>
+            <label for="check1" class="label-check">
+              <img src="../pics/icons8-sun-90-removebg-preview.png" alt="light" class="side" id="theme2" />
+            </label>
+          </form>
+          <a href="../index.html" class="home_button"><img src="../pics/icons8-home-page-90.png" alt="home"
+              class="home_icon" /></a>
+          <!-- BURGER ICON -->
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <span class="fix_containerx"></span>
+              <li>
+                <a class="header_link" href="introduction.html">
+                  <span>&#8678;</span>Введення
+                </a>
+              </li>
+              <div class="dropdown_menu_button2">
+                <li>
+                  <a class="header_link2">
+                    Семантичне ядро <span class="triangle2"></span>
+                  </a>
+                </li>
+                <!-- SEMANTIC DROPDOWN -->
+                <div class="dropdown_menu2">
+                  <ul class="dropdown_list2">
+                    <a href="#Semantic_core">
+                      <li class="dropdown_item-name">Семантичне ядро</li>
+                    </a>
+                    <a href="#types-of_search_results">
+                      <li class="dropdown_item-name">
+                        Види пошукових запитів
+                      </li>
+                    </a>
+                    <a href="#classes-of-searches">
+                      <li class="dropdown_item-name">Класифікація запитів</li>
+                    </a>
+                    <a href="#request sources">
+                      <li class="dropdown_item-name">Джерела запитів</li>
+                    </a>
+                    <a href="#query_processing">
+                      <li class="dropdown_item-name">Обробка запитів</li>
+                    </a>
+                    <a href="#semantic_core_selection_algorithm">
+                      <li class="dropdown_item-name">Алгоритм збірки</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+              <li>
+                <a class="header_link" href="interaction.html">
+                  Впровадження семантики <span>&#8680;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Alert-->
+    <div class="alert">
+      <div class="alert_text">
+        Цей курс не є професійною роботою, тут можуть бути помилки різних
+        типів, але основні поняття і пояснення вірні.
+      </div>
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="btn-close">
+        <line x1="0" x2="100" y1="0" y2="100" class="line" />
+        <line x1="0" x2="100" y1="100" y2="0" class="line" />
+      </svg>
+    </div>
+    <!-- navigation_main_menu -->
+    <nav class="navigation_menu_container hide">
+      <ul class="navigation_menu_list">
+        <a href="../html/start.html">
+          <li class="navigation_menu_item">Старт</li>
+        </a>
+        <a href="../html/introduction.html">
+          <li class="navigation_menu_item">Введення</li>
+        </a>
+        <li class="navigation_menu_item" id="current_theme">
+          Семантичне ядро
+        </li>
+        <a href="../html/interaction.html">
+          <li class="navigation_menu_item">Взаємодія з сайтом</li>
+        </a>
+        <a href="../html/addition.html">
+          <li class="navigation_menu_item">Доповнення</li>
+        </a>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="main_content">
+        <h3 class="sub_title-of_part _anim_items _anim_no_hide" id="Semantic_core">
+          Семантичне ядро
+        </h3>
+        <i class="definition _anim_items _anim_no_hide">
+          <span class="explanation"> Семантичне ядро </span> - Перелік
+          пошукових запитів, що повністю описують весь сайт з урахуванням
+          бажань та інтересів споживача. Використовується для організації
+          семантики сайту.
+          <div class="info2">
+            Тут головна мета визначити бажання та наміри користувача, та
+            виправдати його очікування, надавши йому максимально релевантну
+            відповідь. Сторінка має бути вирішенням проблеми відвідувача.
+            Повна семантика сайту і його структура.
+          </div>
+          <span class="explanation">
+            Орієнтуватися також треба на вашу цільову аудиторію, бо важливо
+            розуміти які у них можуть бути інтереси. Також важливо розуміти:
+          </span>
+        </i>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="types-of-sites_item">
+            <span class="explanation"> Кому ми продаєм? </span> - вік, стать,
+            мислення. Опираючись на це, формується великий блок запитів;
+          </li>
+          <li class="types-of-sites_item">
+            <span class="explanation"> Що ми продаєм? </span> - під це важливо
+            підлаштовуватися, бо якщо ви щось продаєте, це зазвичай якийсь
+            окремий продукт, на якому повинна бути концентрація, щоб
+            користувач легко міг зрозуміти, чи потрібно воно йому;
+          </li>
+          <li class="types-of-sites_item">
+            <span class="explanation">
+              Яка проблема може бути у покупця?
+            </span>
+            - Знаючи конкретну проблему, можна запропонувати конкретне
+            рішення. Наприклад: людина купила собі ліжко 4 на 4 метри, значить
+            їй потрібен конкретний матрац під це ліжко і т.д. Виявити її
+            можуть допомогит види запитів, які йдуть після цього списку.
+          </li>
+          <li class="types-of-sites_item">
+            <span class="explanation">
+              Чому потрібно купити саме у нас?
+            </span>
+            - якщо все ж таки користувач обрав саме ваш сайт як зону
+            зацікавленності, треба його чимось вразити, а зробити це можна чим
+            завгодно: Гарний сніпет, точний опис, знижка... Конкретно причину,
+            купити саме тут, обирає користувач, тому потрібно дати йому
+            варіанти, за якими він, якщо захоче, вже і знайде цю саму причину.
+          </li>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="types-of_search_results">
+          Види пошукових запитів <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Як я вже раніше відмічав, ці види запитів дуже допомагають з
+          виявленням остаточної мети користувача.
+        </i>
+        <ul class="list-with_dots _anim_items _anim_no_hide">
+          <li class="item-with_dot">
+            <span class="explanation"> Навігаційний </span> - мета: перейти на
+            сайт. За назвою, або адресою;
+          </li>
+          <li class="item-with_dot">
+            <span class="explanation"> Інформаційний </span> - мета: дізнатися
+            про щось. Наприклад за допомогою: інструкції, словника і т.п.;
+          </li>
+          <li class="item-with_dot">
+            <span class="explanation"> Транзакційний </span> - мета: побачити
+            відео, текст, аудіо, якийсь потрібний контент;
+          </li>
+          <li class="item-with_dot">
+            <span class="explanation"> Конкретний </span> - мета:
+            дізнатися/знайти щось напряму - ім'я, послугу, конкретний товар;
+          </li>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="classes-of-searches">
+          SEO класифікація запитів <span class="under_line"></span>
+        </h2>
+        <ul class="list-with_dots _anim_items _anim_no_hide">
+          <li class="item-with_dot">
+            Комерційний <span class="explanation">/</span> Інформаційний;
+          </li>
+          <li class="item-with_dot">
+            Сезонний (герлянда на ялинку)
+            <span class="explanation">/</span> Не сезонний;
+          </li>
+          <li class="item-with_dot">
+            Геозалежний (піца Дніпро)
+            <span class="explanation">/</span> Геонезалежний;
+          </li>
+          <li class="item-with_dot">Частотність (як часто роблять запит);</li>
+          <li class="item-with_dot">
+            Конкурентність (які інші компанії користуються таким самим
+            запитом).
+          </li>
+        </ul>
+        <i class="definition _anim_items _anim_no_hide">
+          Теж дуже важливо розрізняти запити за цією класифікацією, бо важливо
+          тримати своє семантичне ядро в чистоті, ось декілька порад у виді
+          правил:
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              <span class="explanation">
+                Не додавати до запитів інформаційного сайту комерційні (і
+                навпаки);</span>
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">
+                Не додавати дуже узагальнені запити (купити одяг), через більш
+                популярні компанії від таких запитів мало сенсу;</span>
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">
+                Не використовувати відносні слова (красивий, дешевий) - такі
+                слова треба заміняти на більш загальні, але при цьому
+                дотримуватись другого правила;</span>
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">
+                Додавати запити з арфографічними помилками тільки у ситуації,
+                коли пишуть неправильно якусь власну назву, яка є складним для
+                запам'ятання словом, якщо такого нема, просто не робіть
+                цього;</span>
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">
+                Якщо на SERPSTAT (або іншій платформі) у якогось запита дуже
+                мала кількість використовувань, не обов'язково його додавати
+                до семантичного ядра, а іноді навіть не треба;</span>
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">
+                Не додавати сленгові вирази, або скорочення;
+              </span>
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">
+                Не додавати запити, які не підходять під тематику, чи не
+                відповідають дійності;
+              </span>
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">
+                Ситуативно іноді треба видаляти уточнення в запитах, бо це
+                може плутати користувача і т.п.
+              </span>
+            </li>
+          </ul>
+
+          <div class="info2">
+            Користуючись цими праивлами-порадами, можно робити клінінг для
+            вашої семантики, завжди залишайте тільки якісний набір запитів!
+          </div>
+        </i>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="request sources">
+          Звідки брати запити? <span class="under_line"></span>
+        </h2>
+        <ul class="list-with_dots _anim_items _anim_no_hide">
+          <li class="item-with_dot">
+            Сервіси ПС (Google Keyword Planner, Google Trends);
+          </li>
+          <li class="item-with_dot">SERP (підказки, схожі запити);</li>
+          <li class="item-with_dot">
+            Інструменти аналітики (Google Search Console);
+          </li>
+          <li class="item-with_dot">
+            Сервіси веб аналітики (Google Analytics);
+          </li>
+          <li class="item-with_dot">
+            Бази ключових слів (SERPSTAT, Semrush, Ahrefs);
+          </li>
+          <li class="item-with_dot">Самому придумати;</li>
+          <li class="item-with_dot">Аналіз семантики конкурентів.</li>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="query_processing">
+          Інструменти для обробки семантики <span class="under_line"></span>
+        </h2>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="types-of-sites_item">Таблиці і встроєні фільтри;</li>
+          <li class="types-of-sites_item">
+            Доповнення до таблиць (скрипт Ядро EXCEL);
+          </li>
+          <li class="types-of-sites_item">Key Collector;</li>
+          <li class="types-of-sites_item">
+            Онлайн сервіси (Rush Analytics, Serpstat).
+          </li>
+        </ul>
+        <i class="definition _anim_items _anim_no_hide">
+          Ось приклад маленького семантичного ядра, зібраного на основі
+          запитів, за якими користувачі частіше за всього потрапляють на цей
+          ресурс, завдяки аналізу конкурентів можна складати дуже добру
+          семантику.
+          <span class="explanation">
+            Знайте, що у цій табличці повинно бути стільки запитів, скільки
+            потрібно, не буває мало, чи багато</span>
+          (таблиця зроблена завдяки тому ж самому серпстату).
+          <div class="fix_container12">
+            <img src="../pics/mini_semantic_core.png" class="example_picture-type16-102" loading="lazy"
+              alt="семантичне ядро в таблиці приклад" />
+          </div>
+        </i>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="semantic_core_selection_algorithm">
+          Алгоритм збірки ядра <span class="under_line"></span>
+        </h2>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="types-of-sites_item">
+            Вам треба знати: для 1 сторінки робиться семантика, чи ще для
+            чогось;
+          </li>
+          <li class="types-of-sites_item">
+            Пошук маркерних слів з урахуванням синонімів;
+          </li>
+          <li class="types-of-sites_item">Вивантаження фраз;</li>
+          <li class="types-of-sites_item">
+            Кластеризація (відокремлення блоків пошукових фраз за різними
+            чинниками):
+            <ul class="analys-list_white-dots _anim_items _anim_no_hide">
+              <li class="alwd_item">
+                <span class="explanation"> - </span> За сенсом та логікою;
+              </li>
+              <li class="alwd_item">
+                <span class="explanation"> - </span> За типом запитів;
+              </li>
+              <li class="alwd_item">
+                <span class="explanation"> - </span> За типом сторінки:
+                (Головна; Категорія; Підкатегорія; Сторінка фільтрів; Блог;
+                Стаття; Карта товару; Інше...)
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <i class="definition _anim_items _anim_no_hide">
+          <span class="explanation">Ще одна порада: зберігайте кудись фрази які видаляєте і видаляйте
+            коли вони вже 100% не знадобляться
+          </span></i>
+        <!-- pagination -->
+        <nav class="pagination">
+          <a href="start.html" class="page">1</a>
+          <a href="introduction.html" class="page">2</a>
+          <div class="page">3</div>
+          <a href="interaction.html" class="page">4</a>
+          <a href="addition.html" class="page">5</a>
+        </nav>
+      </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="author-profile">
+        <div class="author_name">Creator: Mykyta Tymoshenko</div>
+        <img src="../pics/zyro-image.png" />
+      </div>
+    </footer>
+  </wrapper>
+  <!--JS connection-->
+  <script src="../scripts/main.js"></script>
+  <!--------------Second Bootstrap Connection----------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

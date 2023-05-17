@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark">
+
+<head>
+  <link rel="website icon" type="png" href="../pics/icons8-account-90.png" />
+  <title>SEO сайтів | Взаємодія з сайтом</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+  <!--JQ connection-->
+  <script src="../scripts/jquery-3.6.3.min.js"></script>
+  <!--------------Bootstrap first connection----------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!--CSS connection-->
+  <link rel="stylesheet" href="../styles/mainSTyles.css" />
+</head>
+
+<body>
+  <wrapper class="wrapper">
+    <span class="fix_container" id="start"></span>
+    <!-- Scroll Top -->
+    <div id="scroll_top" class="isShowBtn hide">
+      <svg class="strelka-top-2" viewBox="0 0 9 14">
+        <path class="svg-strelka"
+          d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z">
+        </path>
+      </svg>
+    </div>
+    <!--HEADER-->
+    <header class="header">
+      <noscript>
+        <!-- NoScript -->
+        <div class="alert-of_noscript">
+          You have disabled the java script in your browser, this website
+          doesn't work properly without it, please enable it!
+        </div>
+      </noscript>
+      <div class="container">
+        <div class="header_body">
+          <!-- THEME SWITCHER -->
+          <form action="#" class="block-form">
+            <label for="check1" class="label-check">
+              <img src="../pics/icons8-moon-symbol-90-removebg-preview.png" alt="dark" class="side" id="theme1" />
+            </label>
+            <div class="block-form_input">
+              <div class="checkbox" id="main-checkbox">
+                <input type="checkbox" name="main-checkbox" id="check1" />
+              </div>
+            </div>
+            <label for="check1" class="label-check">
+              <img src="../pics/icons8-sun-90-removebg-preview.png" alt="light" class="side" id="theme2" />
+            </label>
+          </form>
+          <a href="../index.html" class="home_button"><img src="../pics/icons8-home-page-90.png" alt="home"
+              class="home_icon" /></a>
+          <!-- BURGER ICON -->
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header_list">
+              <span class="fix_containerx"></span>
+              <li>
+                <a class="header_link" href="semantic_core.html">
+                  <span>&#8678;</span>Семантичне ядро
+                </a>
+              </li>
+              <div class="dropdown_menu_button3">
+                <li>
+                  <a class="header_link3">
+                    Взаємодія з сайтом <span class="triangle3"></span>
+                  </a>
+                </li>
+                <!-- INTERACTION DROPDOWN -->
+                <div class="dropdown_menu3">
+                  <ul class="dropdown_list3">
+                    <a href="#seo_including-in-website">
+                      <li class="dropdown_item-name">
+                        Впровадження семантики
+                      </li>
+                    </a>
+                    <a href="#crawl_budget">
+                      <li class="dropdown_item-name">Краулінговий бюджет</li>
+                    </a>
+                    <a href="#sitemap_and_robots">
+                      <li class="dropdown_item-name">Sitemap/Robots</li>
+                    </a>
+                    <a href="#meta_tags">
+                      <li class="dropdown_item-name">Мета теги</li>
+                    </a>
+                    <a href="#redirects">
+                      <li class="dropdown_item-name">Редиректи</li>
+                    </a>
+                    <a href="#primary_source">
+                      <li class="dropdown_item-name">Першоджерело</li>
+                    </a>
+                    <a href="#code_of_answers">
+                      <li class="dropdown_item-name">
+                        Коди відповідей серверу
+                      </li>
+                    </a>
+                    <a href="#bread_crumbs">
+                      <li class="dropdown_item-name">Хлібні крихти</li>
+                    </a>
+                    <a href="#pagination">
+                      <li class="dropdown_item-name">Сторінки пагінації</li>
+                    </a>
+                    <a href="#hreflang">
+                      <li class="dropdown_item-name">hreflang</li>
+                    </a>
+                    <a href="#http_requests">
+                      <li class="dropdown_item-name">HTTP запити</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+              <li>
+                <a href="addition.html" class="header_link">
+                  Доповнення<span>&#8680;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Alert-->
+    <div class="alert">
+      <div class="alert_text">
+        Цей курс не є професійною роботою, тут можуть бути помилки різних
+        типів, але основні поняття і пояснення вірні.
+      </div>
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="btn-close">
+        <line x1="0" x2="100" y1="0" y2="100" class="line" />
+        <line x1="0" x2="100" y1="100" y2="0" class="line" />
+      </svg>
+    </div>
+    <!-- navigation_main_menu -->
+    <nav class="navigation_menu_container hide">
+      <ul class="navigation_menu_list">
+        <a href="../html/start.html">
+          <li class="navigation_menu_item">Старт</li>
+        </a>
+        <a href="../html/introduction.html">
+          <li class="navigation_menu_item">Введення</li>
+        </a>
+        <a href="../html/semantic_core.html">
+          <li class="navigation_menu_item">Семантичне ядро</li>
+        </a>
+        <li class="navigation_menu_item" id="current_theme">
+          Взаємодія з сайтом
+        </li>
+        <a href="../html/addition.html">
+          <li class="navigation_menu_item">Доповнення</li>
+        </a>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="main_content">
+        <h3 class="sub_title-of_part _anim_items _anim_no_hide">
+          Взаємодія з сайтом
+        </h3>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="seo_including-in-website">
+          Впровадження семантики у контент сайту
+          <span class="under_line"></span>
+        </h2>
+        <div class="info _anim_items _anim_no_hide">Це відбувається в:</div>
+        <ul class="list-with_dots _anim_items _anim_no_hide">
+          <li class="item-with_dot">
+            <div class="code_block _anim_items _anim_no_hide">
+              <code> &lt;title&gt; &lt;/title&gt; </code>
+            </div>
+          </li>
+        </ul>
+        <i class="definition _anim_items _anim_no_hide">
+          Вимоги для написання Title:
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              Короткий та ємний опис сторінки;
+            </li>
+            <li class="types-of-sites_item">
+              Основні фрази ближче до початку;
+            </li>
+            <li class="types-of-sites_item">
+              Читабельний текст без переспаму ключових фраз;
+            </li>
+            <li class="types-of-sites_item">
+              Загальна кількість символів: 140, до 12 слів;
+            </li>
+            <li class="types-of-sites_item">
+              Повинен бути унікальним для свого сайту;
+            </li>
+            <li class="types-of-sites_item">У кінці не ставити крапку!</li>
+          </ul>
+          Додаткові вимоги:
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              Помістити всю головну інформацію у перші 50 символів;
+            </li>
+            <li class="types-of-sites_item">
+              Не повинно бути розділових знаків, таких як:
+              <span class="explanation">.</span> ,
+              <span class="explanation">!</span> ,
+              <span class="explanation">;</span> ,
+              <span class="explanation">?</span> ,
+              <span class="explanation">|</span> (але якщо треба якось
+              поділити ключові фрази,
+              <span class="explanation">|</span> непоганий спосіб) ;
+            </li>
+            <li class="types-of-sites_item">
+              Не треба дублювати ключі, використовуйте синоніми;
+            </li>
+            <li class="types-of-sites_item">
+              Назва бренда, компанії у кінці, якщо супер популярна компанія
+              (Apple, Rozetka, Chanel, то краще на початку);
+            </li>
+            <li class="types-of-sites_item">
+              Для проектів родом з США краще писати кожне слово з великої
+              літери;
+            </li>
+            <li class="types-of-sites_item">
+              Не дублювати ваш <code> &lt;h1&gt;</code>.
+            </li>
+          </ul>
+        </i>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="item-with_dot">
+            <div class="code_block _anim_items _anim_no_hide">
+              <code>
+                  &lt;h1&gt;&lt;/h1&gt; &lt;h2&gt;&lt;/h2&gt;
+                  &lt;h3&gt;&lt;/h3&gt; &lt;h4&gt;&lt;/h4&gt;
+                  &lt;h5&gt;&lt;/h5&gt; &lt;h6&gt;&lt;/h6&gt;
+                </code>
+            </div>
+          </li>
+          <i class="definition _anim_items _anim_no_hide">
+            Вимоги до оформлення H1:
+            <ul class="types-of-sites_list2">
+              <li class="types-of-sites_item">
+                Використовувати лише 1 раз на сторінці;
+              </li>
+              <li class="types-of-sites_item">Не дублювати тайтл;</li>
+              <li class="types-of-sites_item">Не більше 7-8 слів;</li>
+              <li class="types-of-sites_item">Має у собі ключове слово;</li>
+              <li class="types-of-sites_item">
+                Це текст для людини, то ж без перечислення запитів;
+              </li>
+              <li class="types-of-sites_item">
+                Також бажано сюди додати самий частотний запит за тематикою
+                заголовка;
+              </li>
+            </ul>
+          </i>
+        </ul>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            SEO текст (написанний з урахуванням факторів ранжування, на основі
+            семантичного ядра абзац з інформацією);
+          </li>
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            Основному/додатковому контенті, наприклад у картинці:
+            <div class="code_block2">
+              <code> &lt;img alt="<span>ось тут</span>" src="..."&gt; </code>
+            </div>
+            Найвдалішим варіантом буде написати що конкретно зображено на
+            картинці, наприклад якщо тут ноутбук - конкретну модель, колір,
+            конфігурацію пам'яті...
+          </li>
+        </ul>
+        <i class="definition _anim_items _anim_no_hide">
+          Важлива інморфмація про alt:
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              Враховується павуками під час індексації;
+            </li>
+            <li class="types-of-sites_item">
+              Дозволяє брати участь у пошуці по картинках;
+            </li>
+            <li class="types-of-sites_item">
+              Збільшує релевентність вмісту веб-сторінки для пошукових
+              запитів;
+            </li>
+            <li class="types-of-sites_item">
+              Дає можливість користувачу дізнатися що на картинці, якщо у
+              нього поганий зв'язок, або чомусь зображення нема;
+            </li>
+          </ul>
+        </i>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="item-with_dot2 _anim_items _anim_no_hide">
+            Анкори посилань:
+          </li>
+          <div class="code_block _anim_items _anim_no_hide">
+            <code>
+                &lt;a href="..."&gt; &lt;p&gt;<span>ось тут</span>&lt;/p&gt;
+                &lt;/a&gt;
+              </code>
+          </div>
+          <div class="fix_container1 _anim_items _anim_no_hide">
+            <img src="../pics/anchor_link.png" class="example_picture-type16-10 _anim_items _anim_no_hide"
+              loading="lazy" alt="example of link anchor" />
+          </div>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="crawl_budget">
+          Краулінговий бюджет
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Трохи про <span class="explanation">краулінговий бюджет</span>. Це
+          час, який є у паука, щоб проіндексувати ваш сайт, він обмежений, для
+          того щоб уникнути перегрузки на бота, це дуже важливий момент, бо
+          наприклад список циї факторів може просто зіпсувати внесення вашого
+          сайту в індекс:
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">Смітникові сторінки;</li>
+            <li class="types-of-sites_item">Дублі контенту;</li>
+            <li class="types-of-sites_item">Редиректи;</li>
+            <li class="types-of-sites_item">Непросувні сторінки;</li>
+            <li class="types-of-sites_item">Биті посилання.</li>
+          </ul>
+          <div class="info2">
+            <span class="explanation">Оптимізація краулінгового бюджету</span>:
+          </div>
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              Налаштування sitemap.xml та robots.txt (про це далі);
+            </li>
+            <li class="types-of-sites_item">
+              Якісне налаштування перелінковок;
+            </li>
+            <li class="types-of-sites_item">
+              Покращити швидкість завантаження сайту;
+            </li>
+            <li class="types-of-sites_item">
+              Збільшення зовньої посилальної маси;
+            </li>
+            <li class="types-of-sites_item">Оптимізувати редиректи.</li>
+          </ul>
+          Ось доречі сервіс від гугл для консультації з прискорення
+          завантаження сайту:
+          <a href="https://pagespeed.web.dev/" target="_blank">
+            <img src="../pics/page_speed.png" alt="серві для консультації з оптимізації сайту"
+              class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+          </a>
+        </i>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="sitemap_and_robots">
+          Sitemap/Robots
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Це файли, які зберігаються у корінні сайту, для кращої індексації
+          сайту, зараз розглянемо їх окремо:
+          <div class="info2">
+            <span class="explanation">sitemap.xml</span> - це мапа сайту, яка
+            фактично є катологом посилань, які ведуть на усі сторінки сайту.
+            Таке супер актуально наприклад під час індексації вебдодатку, де
+            1000+ сторінок. У цього типу файла є також своя розмітка,
+            рекомендую вам з нею
+            <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"
+              target="_blank">ознайомитися</a>, якщо ви хочете займатися seo просуванням, ось приклад цього
+            синтаксису з інтернету:
+          </div>
+          <div class="fix_container12">
+            <img src="../pics/sitemap_example.png" class="example_picture-type16-102" loading="lazy" />
+          </div>
+          <span class="explanation">Правила реалізації sitemap</span>:
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              Використовуються обов'язкові теги
+              <code> &lt;urlset&gt;, &lt;url&gt;, &lt;loc&gt;</code>;
+            </li>
+            <li class="types-of-sites_item">
+              Не містить у собі сторінки з посиланням canonical(про canonical
+              в мета тегах);
+            </li>
+            <li class="types-of-sites_item">
+              Містить у собі тільки відкриті для індексування сторінки;
+            </li>
+          </ul>
+        </i>
+        <i class="definition _anim_items _anim_no_hide">
+          <div class="info2">
+            <span class="explanation">robots.txt</span> - цей файл дозволяє
+            керувати скануванням павука веб сторінок вашого сайту. Такі
+            сторінки все одно є у результатах пошуку, але без опису. Ще можна
+            (аде не рекомендується) забороняти деякі види сторінок через
+            роботс:
+          </div>
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">Сайти-дзеркала;</li>
+            <li class="types-of-sites_item">
+              Сторінки з різними формами заповнення;
+            </li>
+            <li class="types-of-sites_item">
+              Сторінки з результатами пошуку;
+            </li>
+            <li class="types-of-sites_item">
+              Сторінки з особистою інформацією користувача.
+            </li>
+          </ul>
+          Ось приклад такого текстового файлу:
+          <div class="fix_container12">
+            <img src="../pics/example_of_robots.png" class="example_picture-type16-102" loading="lazy" />
+          </div>
+        </i>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="meta_tags">
+          Мета теги
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Фактично мета теги з самого початку були для SEO, бо ті ж самі
+          <code> &lt;title&gt;&lt;/title&gt;</code>,
+          <code> &lt;h1&gt;&lt;/h1&gt; </code>, як на мене, можуть зробити
+          ідеальний сніпет для сторінки, доречі для цього вони і потрібні, щоб
+          модернізувати той самий сніпет, зробити його більш інтерактивним
+          завдяки таблицям на сайті, додати якийсь заманюючий опис,
+          заголовок... Також головна роль таких тегів покращити індексацію
+          сторінки, тобто зробити роботу для павука простішою.
+          <p>Ось доречі спосіб, як зробити таку штуку:</p>
+          <div class="fix_container12">
+            <img src="../pics/table_at_snippet.png" class="example_picture-type16-102" loading="lazy"
+              alt="example of table from website at snippet of it" />
+          </div>
+          Для цього треба, щоб на сайті була таблиця з тематичною інформацією,
+          тоді може google додасть її до вашого сніпету, але щоб збільшити цей
+          шанс - читайте далі...
+          <div class="fix_container12">
+            <img src="../pics/table_at_website.png" class="example_picture-type16-102" loading="lazy"
+              alt="example of table from website at snippet of it" />
+          </div>
+          Правила до створення такої таблиці:
+          <ul class="types-of-sites_list2">
+            <li class="item-with_dot">Додавати таблицю після seo тексту;</li>
+            <li class="item-with_dot">
+              Додавати текстову частину через тег <code>&lt;h4&gt;</code> ;
+            </li>
+            <li class="item-with_dot">
+              Товари виводити за популярністю, або за мінімальною ціною;
+            </li>
+            <li class="item-with_dot">Мінімум з 2 стовпцями та 5 рядками;</li>
+          </ul>
+        </i>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code> &lt;meta name="description" content="..."&gt;</code> - Мета
+          тег, в якому записується опис сайту в head
+        </div>
+        <i class="definition _anim_items _anim_no_hide">
+          Важливі нюанси до description:
+          <ul class="types-of-sites_list2e">
+            <li class="item-with_dot">
+              Ви напряму даєте ПС свій опис сайту;
+            </li>
+            <li class="item-with_dot">
+              Він не бере участь у текстовому ранжуванні;
+            </li>
+            <li class="item-with_dot">
+              Тут буде ідеально написати навіть невиликий параграф, головне
+              зробити його максимально інформативним і зрозумілим;
+            </li>
+          </ul>
+          <div class="fix_container12">
+            <img src="../pics/description.png" class="example_picture-type16-102" loading="lazy"
+              alt="example of description meta tag" />
+          </div>
+          Головні вимоги до опису:
+          <ul class="types-of-sites_list2">
+            <li class="item-with_dot">
+              Повинен спонукати користувача перейти до сайту;
+            </li>
+            <li class="item-with_dot">Розмір від 70 до 260 символів;</li>
+            <li class="item-with_dot">
+              Головні слова на початку, потім синоніми, ключі і т.п.;
+            </li>
+            <li class="item-with_dot">
+              Повинен оголошувати конурентну перевагу бізнесу;
+            </li>
+            <li class="item-with_dot">
+              Повинен спонукати до конкретної дії;
+            </li>
+            <li class="item-with_dot">
+              Закнічуватися на <span class="explanation">.</span> або
+              <span class="explanation">!</span>;
+            </li>
+            <li class="item-with_dot">Не дублює тайтл;</li>
+            <li class="item-with_dot">
+              При формуванні також не забуваємо про нашу семантику;
+            </li>
+          </ul>
+        </i>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code> &lt;meta name="robots" content="..."&gt;</code> - Мета тег, в
+          якому записується відключення індексації сторінки за допомогою
+          <code>nofollow</code>, або <code>noimageindex</code> для зображень.
+        </div>
+        <i class="definition _anim_items _anim_no_hide">
+          Нащо воно вам потрібно? Ну наприклад у вас є своя 404 сторінка (про
+          неї пізніше), і ви не хочете щоб павук її сканував, бо як ми
+          пам'ятаємо у нього є певна кількість часу на це, а нащо користувачу
+          бачити нашу сторінку з перенаправленням, або помилкой? На справді
+          дійсно не треба, тому закриваємо всякі такі сторінки від індексації,
+          робимо і собі, і павуку краще.
+          <span class="explanation">Важливо не зачиняти sitemap сайту! (про нього теж пізніше)</span>
+        </i>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code> &lt;link rel="canonical" href="..."&gt;</code> - Мета тег,
+          який використовується для вказівки сторінки, на якій знаходиться
+          контент-дубль.
+        </div>
+        <i class="definition _anim_items _anim_no_hide">Таке потрібно, коли на вашому сайті є сторінки пагінації (про
+          них
+          пізніше), і там повторюється контент, щоб павук не витрачав
+          краулінговий бюджет, ставимо цей тег у посилання на сторінки, на
+          яких є такі дублі контенту. Загалом таке використовується:
+        </i>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code>
+              &lt;meta name="prerender-status-code" content="404"&gt;</code>
+          - Мета тег, який допомагає відмітити сторінку, яка буде
+          сигналізувати про помилку 404.
+        </div>
+        <div class="info _anim_items _anim_no_hide">
+          Далі йдуть не завжди потрібні теги!
+        </div>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code> &lt;meta name="keywords" content="..."&gt;</code> - Мета тег,
+          в якому записуються слова, які характеризують наш сайт
+        </div>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code> &lt;meta name="author" content="..."&gt;</code> - Мета тег, в
+          якому записується автор сторінки
+        </div>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code> &lt;meta name="copyright" content="..."&gt;</code> - Мета
+          тег, в якому записується власник авторських прав
+        </div>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code> &lt;meta name="address" content="..."&gt;</code> - Мета тег,
+          в якому записується адрес компанії.
+        </div>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="redirects">
+          Редиректи
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          <div class="info2">Види:</div>
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              <span class="explanation">301 і 308</span> - постійне
+              перенаправлення. Таке використовують коли сторінка змінила
+              локацію назважди, наприклад після оновлення.
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">302 і 307</span> - тимчасове
+              перенаправлення.
+            </li>
+            <li class="types-of-sites_item">
+              <span class="explanation">Meta Refresh</span> - мета тег,
+              завдяки ньому сторінка браузера перезавантажується через деякий
+              час:
+            </li>
+          </ul>
+          <div class="code_block2">
+            <code>&lt;meta http-equiv="refresh" content="15<span>
+                  (час у секундах)</span
+                >; <span>*тут ще можна додати посилання*</span> "&gt;</code>
+          </div>
+          <div class="info2">
+            <span class="explanation">Важливо знати про refresh</span>: Якщо у
+            браузері вимкнен java script, оновлення не відбудеться. При такому
+            редиректі у старому браузері може не спрацювати кнопка назад.
+            Сторінки перезавантажуються автоматично, тож будте з цим обережні,
+            бо це може дратувати користувача. Також через цей редирект павук
+            може розпізнати сторінку як спам, або неправильно її
+            проіндексувати. У старих браузерах такий вид переходів може
+            працювати непраивльно.
+          </div>
+          <span class="explanation">Коли використовуємо 301 і 308:</span>
+          <ul class="list-with_dots2">
+            <li class="item-with_dot">Якщо сторінка переїхала;</li>
+            <li class="item-with_dot">Якщо є дублі сторінок;</li>
+            <li class="item-with_dot">Редирект 301 з http на https;</li>
+            <li class="item-with_dot">Редирект 301 з www. на non-www.;</li>
+            <li class="item-with_dot">
+              Редирект 301 з index.html на головну;
+            </li>
+            <li class="item-with_dot">
+              Редирект 301 з index.php на головну.
+            </li>
+          </ul>
+        </i>
+        <div class="info _anim_items _anim_no_hide">
+          Ось доречі додаток, який допоможе відстежувати редирект на сайті:
+        </div>
+        <a href="https://chrome.google.com/webstore/detail/redirect-path/aomidfkchockcldhbkggjokdkkebmdll"
+          target="_blank">
+          <img src="../pics/redirect_path.png" alt="Redirect path"
+            class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+        </a>
+        <div class="info _anim_items _anim_no_hide">
+          При роботі з редиректами також важливо оптимізовувати url, якими
+          будет користуватися вам клієнт:
+        </div>
+        <ul class="list-with_dots _anim_items _anim_no_hide">
+          <li class="item-with_dot">
+            Не треба робити url з великою кількістю папок (/this element);
+          </li>
+          <li class="item-with_dot">
+            У цих url повинна відображатися структура сайту. Наприклад: ви
+            переходите з url: .../clothes, на якому сторінка з речами, на
+            сторінку, де тільки жовті шарфи: .../clothes/red-scarfs. Тобто ви
+            додаєте у url фактор людини, який є додатковою допомогою для
+            людини у навігації;
+          </li>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="primary_source">
+          Першоджерело
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Ця інформація вам знадобиться якщо ви хочете бути першоджерелом,
+          наприклад під час створення унікального контенту, хочеться бути
+          впевненим що їм будете як раз ви, а не хтось, хто цей контент
+          скопіював. Щоб точно стати першоджерелом вам потрібно:
+        </i>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="types-of-sites_item">
+            Одразу після публікації вашого ресурсу відправте його на
+            індексацію у google search console;
+          </li>
+          <li class="types-of-sites_item">
+            Публікуйте цей контент в соц. мережах.
+          </li>
+        </ul>
+        <div class="info _anim_items _anim_no_hide">
+          <span class="explanation">
+            А якщо у вас ще й оптимізован сайт і його стурктура, то процес
+            буде ще швидше!</span>
+        </div>
+        <i class="definition _anim_items _anim_no_hide">Також при роботі з унікальністю часто вам потрібно буде
+          затверджувати на офіціальному рівні те, що це саме ваш контент, а не
+          чийсь інший, з цим вам можливо допоможе сервіс
+          <span class="explanation">Creative Commons</span>:
+          <a href="https://creativecommons.org/" target="_blank">
+            <img src="../pics/creative_commons.png" alt="Google Analytics"
+              class="example_picture-type16-10 _anim_items _anim_no_hide" id="link_image_style" loading="lazy" />
+          </a>
+        </i>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="code_of_answers">
+          Коди відповідей серверу
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Це набір з 3 чисел, де перша означає:
+          <ul class="list-with_dots2">
+            <li class="item-with_dot">
+              <span class="explanation"> 1</span> - Все добре, завантаження
+              продовжується;
+            </li>
+            <li class="item-with_dot">
+              <span class="explanation">2</span> - Завантаження завершено,
+              досі все добре;
+            </li>
+            <li class="item-with_dot">
+              <span class="explanation">3</span> - Редирект;
+            </li>
+            <li class="item-with_dot">
+              <span class="explanation">4</span> - Помилка під час
+              завантаження, щось не так у відвідувача;
+            </li>
+            <li class="item-with_dot">
+              <span class="explanation">5</span> - Помилка під час
+              завантаження, помилка серверу.
+            </li>
+          </ul>
+          Ось так повинна виглядати сторінка з 5 помилками:
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              Повинно бути помітне вибачення за помилку сервера;
+            </li>
+            <li class="types-of-sites_item">
+              Оформлення з світлим фоном і чорними буквами, НЕ в стилі сайту;
+            </li>
+            <li class="types-of-sites_item">
+              Обов'язкові 2 кнопки: перезавантажити та повернутися на головну
+              сторінку;
+            </li>
+            <li class="types-of-sites_item">
+              Повинні бути методи зворотнього зв'язку, якщо у клієнта будуть
+              якісь питання;
+            </li>
+            <li class="types-of-sites_item">
+              Пам'ятайте, ви робите сторінку для помилок: 500, 501, 502, 503,
+              504, 505, 507, 510;
+            </li>
+          </ul>
+          А ось з цими помилками ви будете напевно працювати частіше за
+          всього:
+          <ul class="list-with_dots2">
+            <li class="item-with_dot">
+              <span class="explanation">404</span> - Сторінка не знайдена;
+            </li>
+            <li class="item-with_dot">
+              <span class="explanation">410</span> - Видалення сторінки
+              назавжди;
+            </li>
+            <li class="item-with_dot">
+              <span class="explanation">403</span> - Блокування сторінки зі
+              сторони власника.
+            </li>
+          </ul>
+        </i>
+        <div class="info _anim_items _anim_no_hide">
+          До 404 сторінки теж є свої стандарти і правила створювання. Головне
+          правило таке: якщо клієнт попадає на цю сторінку, він повинен
+          розуміти що не так, що йому робити щоб це 'відремонтувати', ось ще
+          перелік правил, яка повинна бути сторінка 404:
+        </div>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="types-of-sites_item">
+            Повинні бути прописані мета теги;
+          </li>
+          <li class="types-of-sites_item">
+            Дизайн оформлен у стилі вашого сайту;
+          </li>
+          <li class="types-of-sites_item">
+            Сторінка має посилання на головну сторінку, або схожих
+            послуг/товарів, і т.п.;
+          </li>
+          <li class="types-of-sites_item">Хедер і футер від вашого сайту.</li>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="bread_crumbs">
+          Хлібні крихти
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Це додатковий спосіб навігації по вашому сайту, покращує індексацію
+          сторінок сайту, бо павук завдяки цьому швидше сканує сайт,
+          <span class="explanation">
+            але не треба цим користуватися, і робити наприклад невидиме меню,
+            гуглу таке не подобається</span>, фактично це перелік з гіперпосилань, що створує мапу сайта:
+          <div class="fix_container12">
+            <img src="../pics/bread.png" class="example_picture-type16-102" loading="lazy"
+              alt="приклад хлібних крихт на сайті" />
+          </div>
+          Правила створювання хлібних крихт:
+          <ul class="types-of-sites_list2">
+            <li class="types-of-sites_item">
+              Остання крихта не повинна бути активною;
+            </li>
+            <li class="types-of-sites_item">
+              Хлібні крихти повинні бути зверху сторінки;
+            </li>
+            <li class="types-of-sites_item">
+              Назва першої хлібної криїти - назва сайту, або головного
+              пошукового запиту;
+            </li>
+            <li class="types-of-sites_item">
+              Повинні бути видними і доступними для користувача;
+            </li>
+            <li class="types-of-sites_item">
+              Сторінка мультикатегорій - одна сторінка, з 1 крихтою.
+            </li>
+          </ul>
+        </i>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="pagination">
+          Сторінки пагінації
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Це умовне ділення контенту на сторінки з його матками. Реалізують
+          таке за 2 способами:
+          <ul class="list-with_dots2">
+            <li class="item-with_dot">
+              <span class="explanation">За нумерцією сторінок:</span>
+            </li>
+            <div class="fix_container12">
+              <img src="../pics/pagination_example.png" alt="приклад пагінації сторінок на сайті"
+                class="example_picture-type16-102" loading="lazy" />
+            </div>
+            <li class="item-with_dot">
+              <span class="explanation">
+                За допомогою автоматичного підзавантаження сайту (ви листаєте
+                сайт і за мірою гортання сайт завантажується далі)</span>.
+            </li>
+          </ul>
+          Чи є якийсь підступ у різниці між ними?
+          <div class="info2">
+            Так, павук набагато краще розуміє індексацію сторінок, ліпше
+            сканує контент у такому типі, але якщо дивитися зі сторони
+            користувача, для нього будет зручніше автоматичне підзавантаження,
+            але тут вже самому павуку незручно сканувати. Виходячи з такої
+            логіки я б рекомендував використовувати пагінацію зі переліком
+            сторінок.
+          </div>
+        </i>
+        <div class="info _anim_items _anim_no_hide">
+          Правила налаштування сторінок пагінації:
+        </div>
+        <ul class="list-with_dots _anim_items _anim_no_hide">
+          <li class="item-with_dot">Атрибут canonical вказує сам на себе;</li>
+          <li class="item-with_dot">
+            Вони повиння бути відкрити до індексації;
+          </li>
+          <li class="item-with_dot">
+            Підпис сторінки унікальними метатегами;
+          </li>
+          <li class="item-with_dot">
+            Відкрити ці сторінки для сканування у файлі robots.txt.
+          </li>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="hreflang">
+          hreflang
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">
+          Додаток до <code> &lt;a&gt;</code>, який допомагає роботу визначити,
+          що сторінка є перекладом контенту і не є копією. Ще використовується
+          для регіональних версій сайту, у додаток це ще й допомагає у
+          просуванні вашого ресурсу за кордоном, наприклад з правильним
+          використанням hreflang, якщо у вас є німецька мова, сайт буде
+          з'являтись у користувачів Германії.
+        </i>
+        <div class="code_block _anim_items _anim_no_hide">
+          <code>&lt;link rel="alternate" href="..." hreflang="<span
+                >скорочення назви мови (en-US)</span
+              >"&gt;</code>
+        </div>
+        <div class="info _anim_items _anim_no_hide">Як реалізувати:</div>
+        <ul class="types-of-sites_list _anim_items _anim_no_hide">
+          <li class="types-of-sites_item">
+            Щоб все запрацювало, треба щоб усі різномовні сторінки мали
+            посилання один на одного;
+          </li>
+          <li class="types-of-sites_item">
+            Адрес посилання повинен бути повним, починаючи з http/https
+          </li>
+          <li class="types-of-sites_item">
+            Сторінки з разними мовами можуть бути не на 1 домені;
+          </li>
+          <li class="types-of-sites_item">
+            Атрибут hreflang повинен містити в собі тільки інформацію про код
+            мови, або код та регіон.
+          </li>
+        </ul>
+        <h2 class="title-of_part _anim_items _anim_no_hide" id="http_requests">
+          HTTP запити
+          <span class="under_line"></span>
+        </h2>
+        <i class="definition _anim_items _anim_no_hide">Потрібні для створення терміну, за яким витрачає актуальність
+          інформація. Потрібно це знов для оптимізації сканування вашої
+          сторінки, щоб наприклад павук на сканував те, що вже "не свіже"</i>
+        <div class="info _anim_items _anim_no_hide">
+          Ось перелік головних таких запитів:
+        </div>
+        <ul class="list-with_dots _anim_items _anim_no_hide">
+          <li class="item-with_dot">
+            <span class="explanation">Last-Modified</span> - містить у собі
+            дату, яка означає останні зміни у ресурсі;
+          </li>
+          <li class="item-with_dot">
+            <span class="explanation">X-Robots-Tag</span> - той самий мета тег
+            robots, але діє на рівні заголовків серверу;
+          </li>
+          <li class="item-with_dot">
+            <span class="explanation">Cache-Control</span> - якщо файл був
+            збережен у кеш, то під час наступного запиту барузер отримає його
+            дату локально;
+          </li>
+          <li class="item-with_dot">
+            <span class="explanation">Date</span> - Поточна дата завантаження
+            ресурсу;
+          </li>
+          <li class="item-with_dot">
+            <span class="explanation">Vary</span> - повідомлення до браузеру,
+            що код сайту залежить від браузера користувача;
+          </li>
+          <li class="item-with_dot">
+            <span class="explanation">Expires</span> - Дата, коли інформація
+            втрачає актуальність для браузера та ресурсу.
+          </li>
+        </ul>
+        <!-- pagination -->
+        <nav class="pagination">
+          <a href="start.html" class="page">1</a>
+          <a href="introduction.html" class="page">2</a>
+          <a href="semantic_core.html" class="page">3</a>
+          <div class="page">4</div>
+          <a href="addition.html" class="page">5</a>
+        </nav>
+      </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="author-profile">
+        <div class="author_name">Creator: Mykyta Tymoshenko</div>
+        <img src="../pics/zyro-image.png" />
+      </div>
+    </footer>
+  </wrapper>
+  <!--JS connection-->
+  <script src="../scripts/main.js"></script>
+  <!--------------Second Bootstrap Connection----------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
